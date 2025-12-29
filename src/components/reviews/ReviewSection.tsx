@@ -20,10 +20,19 @@ const tabs = [
   { id: "video-review", label: "영상리뷰" },
 ];
 
-const categories: { id: Category; label: string }[] = [
+// 모든 카테고리 (홈페이지 리뷰용)
+const allCategories: { id: Category; label: string }[] = [
   { id: "tv", label: "투명브이리프팅" },
   { id: "mini", label: "투명미니리프팅" },
   { id: "face", label: "안면거상/미니거상" },
+];
+
+// 블로그/카페, 어플리뷰용 (컨텐츠가 있는 것만)
+// TODO: 추후 mini, face 컨텐츠 추가 시 주석 해제
+const limitedCategories: { id: Category; label: string }[] = [
+  { id: "tv", label: "투명브이리프팅" },
+  // { id: "mini", label: "투명미니리프팅" },
+  // { id: "face", label: "안면거상/미니거상" },
 ];
 
 export function ReviewSection() {
@@ -113,7 +122,8 @@ export function ReviewSection() {
         {["home-review", "blog-review", "app-review"].includes(activeTab) && (
           <div className="max-w-5xl mx-auto px-6 pt-6">
             <div className="flex gap-2 overflow-x-auto scrollbar-hide">
-              {categories.map((cat) => (
+              {/* 홈페이지 리뷰: 모든 카테고리, 블로그/어플: 컨텐츠 있는 것만 */}
+              {(activeTab === "home-review" ? allCategories : limitedCategories).map((cat) => (
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
