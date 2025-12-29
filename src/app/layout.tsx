@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://balancelab.kr"),
-  title: "밸런스랩 성형외과 | 리프팅 센터",
-  description: "강남 밸런스랩 성형외과 리프팅 센터. 투명브이리프팅, 안면거상, 미니리프팅 전문. 임수성, 이장원, 강민구 원장이 1:1 맞춤 상담으로 자연스러운 리프팅 결과를 약속합니다.",
-  keywords: ["밸런스랩 성형외과", "리프팅", "안면거상", "미니리프팅", "투명브이리프팅", "밸런스랩", "강남 성형외과", "얼굴 리프팅", "피부 탄력"],
+  title: "리프팅후기 | 밸런스랩 성형외과 리프팅 전후사진",
+  description: "강남 밸런스랩 성형외과 리프팅 실제 후기와 전후사진. 투명브이리프팅, 안면거상, 미니리프팅 비포애프터를 직접 확인하세요. 임수성, 이장원, 강민구 원장 1:1 상담.",
+  keywords: ["밸런스랩 성형외과", "리프팅", "안면거상", "미니리프팅", "투명브이리프팅", "밸런스랩", "강남 성형외과", "얼굴 리프팅", "피부 탄력", "리프팅후기", "실리프팅후기", "안면거상후기", "미니리프팅후기", "리프팅전후", "리프팅비포애프터", "강남리프팅", "리프팅잘하는곳", "리프팅전후사진", "실제리프팅후기"],
   authors: [{ name: "밸런스랩 성형외과" }],
   creator: "밸런스랩 성형외과",
   publisher: "밸런스랩 성형외과",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "밸런스랩 성형외과 | 리프팅 센터",
+    title: "리프팅후기 | 밸런스랩 성형외과 리프팅 전후사진",
     siteName: "밸런스랩 성형외과",
-    description: "강남 밸런스랩 성형외과 리프팅 센터. 투명브이리프팅, 안면거상, 미니리프팅 전문. 임수성, 이장원, 강민구 원장이 1:1 맞춤 상담으로 자연스러운 리프팅 결과를 약속합니다.",
+    description: "강남 밸런스랩 성형외과 리프팅 실제 후기와 전후사진. 투명브이리프팅, 안면거상, 미니리프팅 비포애프터를 직접 확인하세요.",
     type: "website",
     locale: "ko_KR",
     url: "https://balancelab.kr/thankyou/lift/",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "밸런스랩 성형외과 | 리프팅 센터",
+    title: "리프팅후기 | 밸런스랩 성형외과 리프팅 전후사진",
     site: "@balancelab",
-    description: "강남 밸런스랩 성형외과 리프팅 센터. 투명브이리프팅, 안면거상, 미니리프팅 전문.",
+    description: "강남 밸런스랩 리프팅 실제 후기와 전후사진. 투명브이리프팅, 안면거상, 미니리프팅.",
     images: ["https://balancelab.kr/img/kakao.jpg"],
   },
   icons: {
