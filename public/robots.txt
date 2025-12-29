@@ -1,0 +1,15 @@
+# robots.txt for 밸런스랩 성형외과 리프팅 센터
+# https://balancelab.kr/thankyou/lift/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://balancelab.kr/thankyou/lift/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
+
+# Block common non-content paths
+Disallow: /_next/
+Disallow: /api/

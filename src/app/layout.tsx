@@ -14,36 +14,48 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://balancelab.kr/thankyou/lift"),
+  metadataBase: new URL("https://balancelab.kr"),
   title: "밸런스랩 성형외과 | 리프팅 센터",
-  description: "밸런스랩, 밸런스랩 성형외과, 성형외과, 리프팅센터, 리프팅, 안면거상, 미니리프팅, 체형센터, 지방분해주사, 지방흡입, 수액, 임수성, 이장원, 강민구",
-  keywords: ["밸런스랩 성형외과", "리프팅", "안면거상", "미니리프팅", "투명브이리프팅", "밸런스랩"],
+  description: "강남 밸런스랩 성형외과 리프팅 센터. 투명브이리프팅, 안면거상, 미니리프팅 전문. 임수성, 이장원, 강민구 원장이 1:1 맞춤 상담으로 자연스러운 리프팅 결과를 약속합니다.",
+  keywords: ["밸런스랩 성형외과", "리프팅", "안면거상", "미니리프팅", "투명브이리프팅", "밸런스랩", "강남 성형외과", "얼굴 리프팅", "피부 탄력"],
   authors: [{ name: "밸런스랩 성형외과" }],
   creator: "밸런스랩 성형외과",
   publisher: "밸런스랩 성형외과",
   formatDetection: {
     telephone: false,
   },
+  alternates: {
+    canonical: "https://balancelab.kr/thankyou/lift/",
+    languages: {
+      "ko": "https://www.balancelab.kr/",
+      "en": "http://en.balancelab.kr/lng/en/",
+      "zh": "http://cn.balancelab.kr/lng/cn/",
+      "ja": "http://jp.balancelab.kr/lng/jp/",
+      "th": "http://th.balancelab.kr/lng/th/",
+    },
+  },
   openGraph: {
     title: "밸런스랩 성형외과 | 리프팅 센터",
     siteName: "밸런스랩 성형외과",
-    description: "밸런스랩, 밸런스랩 성형외과, 성형외과, 리프팅센터, 리프팅, 안면거상, 미니리프팅, 체형센터, 지방분해주사, 지방흡입, 수액, 임수성, 이장원, 강민구",
+    description: "강남 밸런스랩 성형외과 리프팅 센터. 투명브이리프팅, 안면거상, 미니리프팅 전문. 임수성, 이장원, 강민구 원장이 1:1 맞춤 상담으로 자연스러운 리프팅 결과를 약속합니다.",
     type: "website",
     locale: "ko_KR",
+    url: "https://balancelab.kr/thankyou/lift/",
     images: [
       {
-        url: "/img/kakao.jpg",
+        url: "https://balancelab.kr/img/kakao.jpg",
         width: 1200,
         height: 630,
-        alt: "밸런스랩 성형외과",
+        alt: "밸런스랩 성형외과 리프팅 센터",
       },
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "밸런스랩 성형외과 | 리프팅 센터",
-    site: "밸런스랩 성형외과",
-    description: "밸런스랩, 밸런스랩 성형외과, 성형외과, 리프팅센터, 리프팅, 안면거상, 미니리프팅",
+    site: "@balancelab",
+    description: "강남 밸런스랩 성형외과 리프팅 센터. 투명브이리프팅, 안면거상, 미니리프팅 전문.",
+    images: ["https://balancelab.kr/img/kakao.jpg"],
   },
   icons: {
     icon: [
@@ -69,15 +81,6 @@ export const metadata: Metadata = {
     "naver-site-verification": "a31941be55d9672fa7afa2751fa2555fb390cf24",
     "facebook-domain-verification": "t3pvankquurf0q2uz4n9p6zpulraal",
   },
-  alternates: {
-    languages: {
-      "ko": "https://www.balancelab.kr/",
-      "en": "http://en.balancelab.kr/lng/en/",
-      "zh": "http://cn.balancelab.kr/lng/cn/",
-      "ja": "http://jp.balancelab.kr/lng/jp/",
-      "th": "http://th.balancelab.kr/lng/th/",
-    },
-  },
 };
 
 export default function RootLayout({
@@ -88,6 +91,75 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        {/* JSON-LD Structured Data - MedicalBusiness & LocalBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["MedicalBusiness", "LocalBusiness"],
+              "name": "밸런스랩 성형외과",
+              "alternateName": "BalanceLab Plastic Surgery",
+              "description": "강남 밸런스랩 성형외과 리프팅 센터. 투명브이리프팅, 안면거상, 미니리프팅 전문.",
+              "url": "https://balancelab.kr/thankyou/lift/",
+              "logo": "https://balancelab.kr/img/logo.png",
+              "image": "https://balancelab.kr/img/kakao.jpg",
+              "telephone": "+82-2-512-8888",
+              "priceRange": "$$$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "강남대로 422",
+                "addressLocality": "강남구",
+                "addressRegion": "서울특별시",
+                "postalCode": "06192",
+                "addressCountry": "KR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 37.501286,
+                "longitude": 127.024776
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "10:00",
+                  "closes": "19:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Saturday",
+                  "opens": "10:00",
+                  "closes": "16:00"
+                }
+              ],
+              "sameAs": [
+                "https://www.instagram.com/balancelab_official/",
+                "https://www.youtube.com/@balancelab",
+                "https://blog.naver.com/balancelab"
+              ],
+              "medicalSpecialty": "PlasticSurgery",
+              "availableService": [
+                {
+                  "@type": "MedicalProcedure",
+                  "name": "투명브이리프팅",
+                  "procedureType": "https://schema.org/NoninvasiveProcedure"
+                },
+                {
+                  "@type": "MedicalProcedure",
+                  "name": "안면거상술",
+                  "procedureType": "https://schema.org/SurgicalProcedure"
+                },
+                {
+                  "@type": "MedicalProcedure",
+                  "name": "미니리프팅",
+                  "procedureType": "https://schema.org/SurgicalProcedure"
+                }
+              ]
+            })
+          }}
+        />
+
         {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
